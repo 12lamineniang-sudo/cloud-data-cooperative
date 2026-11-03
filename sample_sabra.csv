@@ -1,0 +1,4 @@
+timestamp,station,noise_leq_db,pollutant_no2,pollutant_pm10
+2026-10-31 08:00:00,Foron,55.4,21.14,15.31
+2026-10-31 08:15:00,Meyrin,52.1,11.09,15.55
+2026-10-31 08:30:00,Necker,61.8,25.15,16.06

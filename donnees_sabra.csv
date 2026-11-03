@@ -1,0 +1,3 @@
+timestamp,device_id,niveau_bruit_db,temperature
+2026-11-02T10:00:00Z,station_bruit_sabra_01,55.4,18.2
+2026-11-02T10:05:00Z,station_bruit_sabra_01,58.1,18.4

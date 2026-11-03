@@ -1,0 +1,4 @@
+timestamp,sensor_id,active_power_w,voltage_v,current_a
+2026-10-31 08:00:00,clemap_01,1250.5,230.1,5.43
+2026-10-31 08:00:10,clemap_01,1248.0,229.8,5.42
+2026-10-31 08:00:20,clemap_01,1255.2,230.4,5.45

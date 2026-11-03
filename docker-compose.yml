@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  localstack:
+    image: localstack/localstack:3.8.1
+    container_name: coop_localstack
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3,dynamodb,lambda,apigateway,iam,iot
+      - LAMBDA_EXECUTOR=local
+      - LAMBDA_RUNTIME_EXECUTOR=local
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: coop_mosquitto
+    ports:
+      - "1883:1883"
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: coop_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
